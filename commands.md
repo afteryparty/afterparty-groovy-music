@@ -1,50 +1,62 @@
 ---
 layout: default
 title: Commands
-description: VoiceMaestro command reference.
+description: Slash command reference for Afterparty Groovy Music.
 permalink: /commands/
 ---
 
 # Commands
 
-## Setup & Configuration
-- `/setup create` — Create the “Join to Create” voice hub system  
-- `/setup delete` — Remove the voice hub system  
-- `/interface` — Set up the voice channel interface (text channel with buttons)  
-- `/delete interface` — Delete the voice interface  
+Use this page as a quick reference for the main music features available in Afterparty Groovy Music.
 
-## Channel Management
-- `/channel` — Create a temporary voice channel (Premium options available)  
-- `/lock` — Lock your voice channel  
-- `/unlock` — Unlock your voice channel  
-- `/hide` — Hide your voice channel  
-- `/reveal` — Reveal your voice channel  
-- `/rename <name>` — Change the name of your voice channel  
-- `/limit <number>` — Set a user limit (0–99)  
-- `/bitrate <kbps>` — Set the channel audio quality  
-- `/video_quality <hd/sd>` — Toggle HD video quality  
+## Playback
 
-## User Access
-- `/permit <user>` — Allow a specific user to join your locked channel  
-- `/reject <user>` — Kick a user and prevent them from re-joining  
-- `/claim` — Claim ownership if the previous owner left  
-- `/transfer <user>` — Transfer channel ownership  
-- `/trust <user>` — Trust a user (allow them to manage the channel)  
-- `/untrust <user>` — Revoke trust  
-- `/block <user>` — Block a user from joining  
-- `/unblock <user>` — Unblock a user  
+- `/play` - Play a song from a search query or direct URL
+- `/search` - Search for tracks before choosing one
+- `/pause` - Pause the current track
+- `/resume` - Resume paused playback
+- `/skip` - Skip the current track or skip ahead in the queue
+- `/previous` - Return to the previously played song
+- `/replay` - Restart the current song from the beginning
+- `/stop` - Stop playback and clear the session
+- `/join` - Ask the bot to join your voice channel
+- `/disconnect` - Disconnect the bot from voice
 
-## Premium Features
-- `/premium` — Check subscription status  
-- `/panel` — Open the interactive voice control dashboard  
-- `/dashboard` — View premium statistics and settings  
-- `/automation` — Configure auto-delete, auto-roles, idle timeouts  
-- `/voicestats` — View voice activity leaderboards  
-- `/presets` — Save and load voice channel configurations  
+## Queue
+
+- `/queue` - Show the queue and current playback state
+- `/move` - Move a track to a different queue position
+- `/remove` - Remove a specific track from the queue
+- `/shuffle` - Shuffle the queued songs
+- `/loop` - Change repeat mode
+- `/clear` - Clear the upcoming queue
+
+## Audio Controls
+
+- `/volume` - Change playback volume
+- `/seek` - Jump to a position in the current track
+- `/filters filter` - Apply a playback filter preset
+- `/equalizers equalizer` - Adjust the equalizer profile
+- `/audio-output` - Control supported output settings
+- `/autoplay` - Keep playback going with recommended follow-up tracks
+- `/247` - Keep the player connected in the channel
 
 ## Utility
-- `/stats` — View bot statistics (Server count, Ping, Uptime)  
-- `/ping` — Check bot response time  
-- `/help` — View the help menu  
-- `/support` — Support links  
-- `/activity` — Start a voice activity (e.g., YouTube Together)
+
+- `/nowplaying` - Show the current song
+- `/help` - Open the help menu
+- `/support` - Get support links
+- `/invite` - Get the invite link
+- `/about` - Show project information
+- `/ping` - Check latency
+- `/status` - Check bot status
+- `/setup-channel` - Configure a request/setup channel
+- `/setprefix` - Change the prefix used for message commands where enabled
+
+## Premium
+
+- `/premium buy` - Open premium purchase info
+- `/premium features` - View premium features
+- `/premium show` - Show premium status
+
+Premium source access and advanced controls can vary depending on your deployment and entitlements.
