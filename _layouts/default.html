@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="{{ site.theme_color | default: '#66085B' }}" />
     <title>{{ page.title | default: site.title }}</title>
-    {% if site.logo %}
-      <link rel="icon" type="image/x-icon" href="{{ site.logo | relative_url }}" />
-      <link rel="shortcut icon" type="image/x-icon" href="{{ site.logo | relative_url }}" />
-      <link rel="apple-touch-icon" href="{{ site.logo | relative_url }}" />
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
+    {% if site.favicon %}
+      <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon" />
+    {% endif %}
+    {% if site.icon %}
+      <link rel="apple-touch-icon" href="{{ site.icon | relative_url }}" />
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
   </head>
@@ -17,8 +19,8 @@
 
     <header class="page-header" role="banner">
       <div class="shell">
-        {% if site.logo %}
-          <img class="brand-mark brand-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }} icon" />
+        {% if site.icon %}
+          <img class="brand-mark brand-logo" src="{{ site.icon | relative_url }}" alt="{{ site.title }} icon" />
         {% else %}
           <div class="brand-mark">AGM</div>
         {% endif %}
@@ -43,7 +45,7 @@
     <footer class="site-footer" role="contentinfo">
       <div class="shell footer-row">
         <span class="footer-pill">Powered by {{ site.footer_brand }}</span>
-        <span class="footer-copy">© {{ site.time | date: "%Y" }} {{ site.footer_brand }} · <a href="{{ site.footer_link }}">Website</a></span>
+        <span class="footer-copy">Copyright {{ site.time | date: "%Y" }} {{ site.footer_brand }} | <a href="{{ site.footer_link }}">Website</a></span>
       </div>
     </footer>
   </body>
