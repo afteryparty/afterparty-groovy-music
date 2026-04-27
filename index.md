@@ -30,7 +30,9 @@ description: Official setup guide, command reference, and troubleshooting help f
     <a href="#playback">Playback</a>
     <a href="#queue">Queue</a>
     <a href="#audio-controls">Audio Controls</a>
+    <a href="#required-permissions">Required Permissions</a>
     <a href="#troubleshooting">Troubleshooting</a>
+    <a href="#faq">FAQ</a>
     <a href="#support">Support</a>
   </nav>
 </section>
@@ -62,6 +64,8 @@ description: Official setup guide, command reference, and troubleshooting help f
 ```
 
 <h2 id="commands">Commands</h2>
+
+For a fuller command list, open the dedicated [Commands page](/commands/).
 
 <div class="command-grid">
   <div class="command-card">
@@ -112,6 +116,23 @@ description: Official setup guide, command reference, and troubleshooting help f
 - <code>/audio-output</code> exposes playback output controls when supported.
 - <code>/autoplay</code> and <code>/247</code> help keep music going for longer sessions.
 
+<h2 id="required-permissions">Required Permissions</h2>
+
+<div class="card-grid">
+  <div class="permission-card">
+    <h3>Basic voice permissions</h3>
+    <p>Afterparty Groovy Music should be able to <strong>View Channels</strong>, <strong>Connect</strong>, and <strong>Speak</strong> in the voice channel where it will play music.</p>
+  </div>
+  <div class="permission-card">
+    <h3>Helpful text permissions</h3>
+    <p>Grant <strong>Send Messages</strong>, <strong>Embed Links</strong>, <strong>Use Slash Commands</strong>, and <strong>Read Message History</strong> so the bot can respond correctly in setup and playback channels.</p>
+  </div>
+  <div class="permission-card">
+    <h3>Optional quality-of-life permissions</h3>
+    <p><strong>Add Reactions</strong> and <strong>Manage Messages</strong> are helpful in interactive setups, but the core music experience mainly depends on voice and messaging permissions.</p>
+  </div>
+</div>
+
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <div class="card-grid">
@@ -133,6 +154,56 @@ description: Official setup guide, command reference, and troubleshooting help f
   </div>
 </div>
 
+<h3>Lavalink Troubleshooting</h3>
+
+<div class="card-grid">
+  <div class="tip-card">
+    <h3>Node is offline</h3>
+    <p>If every playback command fails at once, confirm your Lavalink server is running, reachable from the bot host, and using the same host, port, and password configured for the bot.</p>
+  </div>
+  <div class="tip-card">
+    <h3>Auth or port mismatch</h3>
+    <p>Double-check the Lavalink authorization password and port. A wrong password or blocked port usually causes connection failures even when the process is online.</p>
+  </div>
+  <div class="tip-card">
+    <h3>SSL and firewall issues</h3>
+    <p>If you use a secure connection, make sure the secure setting matches your Lavalink deployment. Firewalls or provider networking rules can also stop the bot from reaching the node.</p>
+  </div>
+  <div class="tip-card">
+    <h3>Track loads fail intermittently</h3>
+    <p>Look at Lavalink logs for upstream source errors, provider rate limits, or plugin issues. Restarting Lavalink may help, but repeated failures usually point to a source-side problem.</p>
+  </div>
+</div>
+
+<h2 id="faq">FAQ</h2>
+
+<div class="faq-grid">
+  <div class="faq-card">
+    <h3>Does the bot support direct links?</h3>
+    <p>Yes. You can paste direct track or playlist URLs into <code>/play</code> when the source is supported.</p>
+  </div>
+  <div class="faq-card">
+    <h3>Why is the bot not responding to my command?</h3>
+    <p>Check that the bot is online, has permission to post in the channel, and that your server has granted slash command access to the application.</p>
+  </div>
+  <div class="faq-card">
+    <h3>Why can I not hear anything after the bot joins?</h3>
+    <p>Verify the bot has <strong>Speak</strong> permission, that the queue is not empty, and that Lavalink is connected. Re-adding the track with <code>/play</code> is a good quick test.</p>
+  </div>
+  <div class="faq-card">
+    <h3>Do Spotify and Apple Music always work?</h3>
+    <p>Those sources may depend on premium access and source availability in your deployment. If they fail, test with a YouTube query or direct URL to isolate the issue.</p>
+  </div>
+</div>
+
 <h2 id="support">Support</h2>
 
 If you need help with setup or playback issues, use the Support button above to join the Afterparty support server. You can also browse the source on [GitHub](https://github.com/afteryparty/afterparty-groovy-music) or visit [Afterparty Bot Labs](https://afterpartylabs.xyz) for the wider bot lineup.
+
+### Button Check
+
+- [Home](/) returns to the main docs page.
+- [Invite](https://discord.com/oauth2/authorize?client_id=1086511506922946650&permissions=37079041&integration_type=0&scope=applications.commands+bot) opens the bot invite.
+- [Support](https://discord.gg/BusuZp2G8w) opens the support server.
+- [Website](https://afterpartylabs.xyz) opens the Afterparty site.
+- [GitHub](https://github.com/afteryparty/afterparty-groovy-music) opens the repository.
