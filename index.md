@@ -1,209 +1,77 @@
 ---
 layout: default
-title: Afterparty Groovy Music Docs
-description: Official setup guide, command reference, and troubleshooting help for Afterparty Groovy Music.
+title: Afterparty Groovy Music
+description: High quality Discord music playback with queue tools, filters, and premium listening features.
 ---
 
-<section class="hero-card">
-  <div class="section-kicker">Music Docs</div>
-  <h2>What Afterparty Groovy Music Does</h2>
-  <p>Afterparty Groovy Music brings smooth Discord music playback to your server with fast song search, direct URL support, queue tools, audio tuning, and interactive playback controls built for everyday listening.</p>
+## Overview
 
-  <div class="hero-grid">
-    <div class="stat">
-      <strong>Fast playback</strong>
-      Search or paste a link and start listening with <code>/play</code>.
-    </div>
-    <div class="stat">
-      <strong>Queue tools</strong>
-      Move, remove, loop, shuffle, clear, and review tracks without breaking the flow.
-    </div>
-    <div class="stat">
-      <strong>Audio control</strong>
-      Adjust volume, seek through tracks, and apply filters or equalizer settings.
-    </div>
-  </div>
+**Afterparty Groovy Music** is the music-focused Discord bot from Afterparty Bot Labs. It is built for quick song playback, clean queue handling, direct link support, and a polished voice experience for both casual listening and always-on community music rooms.
 
-  <nav class="anchor-nav" aria-label="Sections">
-    <a href="#quick-start">Quick Start</a>
-    <a href="#commands">Commands</a>
-    <a href="#playback">Playback</a>
-    <a href="#queue">Queue</a>
-    <a href="#audio-controls">Audio Controls</a>
-    <a href="#required-permissions">Required Permissions</a>
-    <a href="#troubleshooting">Troubleshooting</a>
-    <a href="#faq">FAQ</a>
-    <a href="#support">Support</a>
-  </nav>
-</section>
+## Features
 
-<h2 id="quick-start">Quick Start</h2>
+- High quality audio playback through Lavalink
+- Search queries and direct URL playback
+- Queue tools for moving, removing, looping, and shuffling songs
+- Audio controls for volume, seek, filters, and equalizer changes
+- Premium source support for Spotify and Apple Music in supported deployments
 
-<div class="card-grid">
-  <div class="doc-card">
-    <div class="section-kicker">Step 1</div>
-    <h3>Invite the bot</h3>
-    <p>Add Afterparty Groovy Music to your server with the Invite button above, then make sure it can join and speak in your voice channel.</p>
-  </div>
-  <div class="doc-card">
-    <div class="section-kicker">Step 2</div>
-    <h3>Join a voice channel</h3>
-    <p>Join the voice channel where you want playback to happen. Most playback commands require you to be connected first.</p>
-  </div>
-  <div class="doc-card">
-    <div class="section-kicker">Step 3</div>
-    <h3>Start music</h3>
-    <p>Use <code>/play</code> with a song name or direct URL. You can also use <code>/search</code> if you want to browse results first.</p>
-  </div>
-</div>
+## Quick Start
 
-```text
-/play never gonna give you up
-/play https://youtu.be/dQw4w9WgXcQ
-/queue
-```
+1. Invite the bot to your server.
+2. Join the voice channel where you want playback to happen.
+3. Use `/play` with a song name or direct link.
+4. Open `/queue` to review what is lined up next.
 
-<h2 id="commands">Commands</h2>
+## Commands
 
-For a fuller command list, open the dedicated [Commands page](/commands/).
+### Playback
 
-<div class="command-grid">
-  <div class="command-card">
-    <div class="section-kicker">Playback</div>
-    <strong>/play, /search, /pause, /resume</strong>
-    <p>Start tracks, search results, and control active playback.</p>
-  </div>
-  <div class="command-card">
-    <div class="section-kicker">Queue</div>
-    <strong>/queue, /move, /remove, /clear, /shuffle, /loop</strong>
-    <p>Manage what plays next and reshape the queue on the fly.</p>
-  </div>
-  <div class="command-card">
-    <div class="section-kicker">Audio</div>
-    <strong>/volume, /seek, /filters filter, /equalizers equalizer, /audio-output</strong>
-    <p>Fine-tune playback level, position, and sound profile.</p>
-  </div>
-  <div class="command-card">
-    <div class="section-kicker">Utility</div>
-    <strong>/nowplaying, /join, /disconnect, /help, /support</strong>
-    <p>See the current track, connect the bot, and get help quickly.</p>
-  </div>
-</div>
+`/play`, `/search`, `/pause`, `/resume`, `/skip`, `/previous`, `/replay`, `/stop`
 
-<h2 id="playback">Playback</h2>
+### Queue
 
-- <code>/play</code> adds a track, playlist, or direct URL to the queue.
-- <code>/search</code> is useful when you want to pick from results instead of queueing the first match.
-- <code>/pause</code> and <code>/resume</code> control the current song without clearing the queue.
-- <code>/skip</code>, <code>/previous</code>, and <code>/replay</code> help move around active playback quickly.
-- <code>/stop</code> ends playback and clears the current session when you are finished.
+`/queue`, `/move`, `/remove`, `/clear`, `/shuffle`, `/loop`
 
-<h2 id="queue">Queue</h2>
+### Audio
 
-- <code>/queue</code> shows the active queue and what is coming next.
-- <code>/move</code> reorders songs so you can bring something forward or push it back.
-- <code>/remove</code> deletes a specific queued item.
-- <code>/shuffle</code> randomizes the queue.
-- <code>/loop</code> can repeat a song or keep the queue cycling depending on your selected mode.
-- <code>/clear</code> wipes the queue if you want a fresh start.
+`/volume`, `/seek`, `/filters filter`, `/equalizers equalizer`, `/audio-output`, `/autoplay`, `/247`
 
-<h2 id="audio-controls">Audio Controls</h2>
+### Utility
 
-- <code>/volume</code> changes playback loudness.
-- <code>/seek</code> jumps to a point in the current track.
-- <code>/filters filter</code> applies playback effects.
-- <code>/equalizers equalizer</code> adjusts the sound profile for different listening styles.
-- <code>/audio-output</code> exposes playback output controls when supported.
-- <code>/autoplay</code> and <code>/247</code> help keep music going for longer sessions.
+`/nowplaying`, `/join`, `/disconnect`, `/help`, `/support`, `/invite`
 
-<h2 id="required-permissions">Required Permissions</h2>
+## Required Permissions
 
-<div class="card-grid">
-  <div class="permission-card">
-    <h3>Basic voice permissions</h3>
-    <p>Afterparty Groovy Music should be able to <strong>View Channels</strong>, <strong>Connect</strong>, and <strong>Speak</strong> in the voice channel where it will play music.</p>
-  </div>
-  <div class="permission-card">
-    <h3>Helpful text permissions</h3>
-    <p>Grant <strong>Send Messages</strong>, <strong>Embed Links</strong>, <strong>Use Slash Commands</strong>, and <strong>Read Message History</strong> so the bot can respond correctly in setup and playback channels.</p>
-  </div>
-  <div class="permission-card">
-    <h3>Optional quality-of-life permissions</h3>
-    <p><strong>Add Reactions</strong> and <strong>Manage Messages</strong> are helpful in interactive setups, but the core music experience mainly depends on voice and messaging permissions.</p>
-  </div>
-</div>
+- View Channels
+- Connect
+- Speak
+- Send Messages
+- Embed Links
+- Read Message History
+- Use Slash Commands
 
-<h2 id="troubleshooting">Troubleshooting</h2>
+## Troubleshooting
 
-<div class="card-grid">
-  <div class="tip-card">
-    <h3>The bot is not joining</h3>
-    <p>Check that the bot has permission to view, connect, and speak in the target voice channel. Also make sure you are in a voice channel before running playback commands.</p>
-  </div>
-  <div class="tip-card">
-    <h3>No sound is playing</h3>
-    <p>Try <code>/skip</code> or <code>/stop</code> followed by <code>/play</code>. If the issue persists, confirm your Lavalink node and hosting environment are online.</p>
-  </div>
-  <div class="tip-card">
-    <h3>A search is not returning results</h3>
-    <p>Use a direct URL if available, or try a more specific search phrase with artist and track name together.</p>
-  </div>
-  <div class="tip-card">
-    <h3>Premium sources are unavailable</h3>
-    <p>Spotify and Apple Music playback may require premium access depending on your deployment and entitlement setup.</p>
-  </div>
-</div>
+- If the bot is not joining, confirm it can view, connect to, and speak in the target voice channel.
+- If playback starts but you hear nothing, retry with `/stop` followed by `/play` and confirm the Lavalink node is online.
+- If searches fail, try a more specific artist plus track query or use a direct URL.
+- If premium sources fail, verify your deployment and entitlement setup first with a standard YouTube search as a control test.
 
-<h3>Lavalink Troubleshooting</h3>
+## FAQ
 
-<div class="card-grid">
-  <div class="tip-card">
-    <h3>Node is offline</h3>
-    <p>If every playback command fails at once, confirm your Lavalink server is running, reachable from the bot host, and using the same host, port, and password configured for the bot.</p>
-  </div>
-  <div class="tip-card">
-    <h3>Auth or port mismatch</h3>
-    <p>Double-check the Lavalink authorization password and port. A wrong password or blocked port usually causes connection failures even when the process is online.</p>
-  </div>
-  <div class="tip-card">
-    <h3>SSL and firewall issues</h3>
-    <p>If you use a secure connection, make sure the secure setting matches your Lavalink deployment. Firewalls or provider networking rules can also stop the bot from reaching the node.</p>
-  </div>
-  <div class="tip-card">
-    <h3>Track loads fail intermittently</h3>
-    <p>Look at Lavalink logs for upstream source errors, provider rate limits, or plugin issues. Restarting Lavalink may help, but repeated failures usually point to a source-side problem.</p>
-  </div>
-</div>
+### Does it support direct links?
 
-<h2 id="faq">FAQ</h2>
+Yes. You can paste supported track or playlist URLs directly into `/play`.
 
-<div class="faq-grid">
-  <div class="faq-card">
-    <h3>Does the bot support direct links?</h3>
-    <p>Yes. You can paste direct track or playlist URLs into <code>/play</code> when the source is supported.</p>
-  </div>
-  <div class="faq-card">
-    <h3>Why is the bot not responding to my command?</h3>
-    <p>Check that the bot is online, has permission to post in the channel, and that your server has granted slash command access to the application.</p>
-  </div>
-  <div class="faq-card">
-    <h3>Why can I not hear anything after the bot joins?</h3>
-    <p>Verify the bot has <strong>Speak</strong> permission, that the queue is not empty, and that Lavalink is connected. Re-adding the track with <code>/play</code> is a good quick test.</p>
-  </div>
-  <div class="faq-card">
-    <h3>Do Spotify and Apple Music always work?</h3>
-    <p>Those sources may depend on premium access and source availability in your deployment. If they fail, test with a YouTube query or direct URL to isolate the issue.</p>
-  </div>
-</div>
+### What should I check if music stops unexpectedly?
 
-<h2 id="support">Support</h2>
+Check the voice connection, Lavalink node health, and whether the current source provider is having issues.
 
-If you need help with setup or playback issues, use the Support button above to join the Afterparty support server. You can also browse the source on [GitHub](https://github.com/afteryparty/afterparty-groovy-music) or visit [Afterparty Bot Labs](https://afterpartylabs.xyz) for the wider bot lineup.
+### Are Spotify and Apple Music always available?
 
-### Button Check
+Not always. Those sources can depend on premium access and source availability in your deployment.
 
-- [Home](/) returns to the main docs page.
-- [Invite](https://discord.com/oauth2/authorize?client_id=1086511506922946650&permissions=37079041&integration_type=0&scope=applications.commands+bot) opens the bot invite.
-- [Support](https://discord.gg/BusuZp2G8w) opens the support server.
-- [Website](https://afterpartylabs.xyz) opens the Afterparty site.
-- [GitHub](https://github.com/afteryparty/afterparty-groovy-music) opens the repository.
+## Support
+
+Use the Support button above to join the Afterparty support server. For source code and release context, use the GitHub button in the header.
