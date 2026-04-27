@@ -9,7 +9,8 @@ theme_color: "#66085B"
 footer_brand: "Afterparty Bot Labs"
 footer_link: "https://afterpartylabs.xyz"
 
-logo: "/assets/css/img/favicon.ico"
+icon: "/assets/images/bot-icon.ico"
+favicon: "/favicon.ico"
 
 cta_invite_url: "https://discord.com/oauth2/authorize?client_id=1086511506922946650&permissions=37079041&integration_type=0&scope=applications.commands+bot"
 cta_support_url: "https://discord.gg/BusuZp2G8w"
