@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="{{ site.theme_color | default: '#66085B' }}" />
     <title>{{ page.title | default: site.title }}</title>
+    {% if site.logo %}
+      <link rel="icon" type="image/x-icon" href="{{ site.logo | relative_url }}" />
+      <link rel="shortcut icon" type="image/x-icon" href="{{ site.logo | relative_url }}" />
+      <link rel="apple-touch-icon" href="{{ site.logo | relative_url }}" />
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" />
   </head>
   <body>
@@ -12,13 +17,17 @@
 
     <header class="page-header" role="banner">
       <div class="shell">
-        <div class="brand-mark">AGM</div>
+        {% if site.logo %}
+          <img class="brand-mark brand-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }} icon" />
+        {% else %}
+          <div class="brand-mark">AGM</div>
+        {% endif %}
         <p class="eyebrow">Afterparty Bot Labs</p>
         <h1 class="project-name">{{ page.title | default: site.title }}</h1>
         <p class="project-tagline">{{ page.description | default: site.description }}</p>
 
         <nav class="cta" aria-label="Primary">
-          <a href="{{ '/index.html' | relative_url }}" class="btn secondary">Home</a>
+          <a href="{{ '/' | relative_url }}" class="btn secondary">Home</a>
           <a href="{{ site.cta_invite_url }}" class="btn primary">Invite</a>
           <a href="{{ site.cta_support_url }}" class="btn secondary">Support</a>
           <a href="{{ site.cta_website_url }}" class="btn secondary">Website</a>
