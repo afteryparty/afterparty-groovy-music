@@ -1,17 +1,12 @@
 theme: jekyll-theme-midnight
-
 title: "Afterparty Groovy Music"
-description: "Official setup guide, command reference, and troubleshooting docs for Afterparty Groovy Music."
-
+description: "High quality Discord music playback with queue tools, filters, and premium listening features."
 show_downloads: false
 theme_color: "#66085B"
-
 footer_brand: "Afterparty Bot Labs"
 footer_link: "https://afterpartylabs.xyz"
-
 icon: "/assets/images/bot-icon.ico"
 favicon: "/favicon.ico"
-
 cta_invite_url: "https://discord.com/oauth2/authorize?client_id=1086511506922946650&permissions=37079041&integration_type=0&scope=applications.commands+bot"
 cta_support_url: "https://discord.gg/BusuZp2G8w"
 cta_website_url: "https://afterpartylabs.xyz"
