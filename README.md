@@ -2,8 +2,8 @@
 
 High quality music streaming for Discord.
 
-[![Add Bot](https://img.shields.io/badge/Add%20Bot-Invite-66085B?style=for-the-badge&logo=discord&logoColor=white)](BOT_INVITE_LINK)
-[![Support](https://img.shields.io/badge/Support-Discord-66085B?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/UDqAk2MFrh)
+[![Add Bot](https://img.shields.io/badge/Add%20Bot-Invite-66085B?style=for-the-badge\&logo=discord\&logoColor=white)](BOT_INVITE_LINK)
+[![Support](https://img.shields.io/badge/Support-Discord-66085B?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.gg/UDqAk2MFrh)
 [![Website](https://img.shields.io/badge/Website-Afterparty%20Bot%20Labs-66085B?style=for-the-badge)](https://afterpartylabs.xyz)
 
 ---
@@ -14,17 +14,26 @@ Afterparty Groovy Music is a Discord music bot designed for smooth audio playbac
 
 ## 🎶 Features
 
-- High quality music playback
-- Queue management
-- Playlist support
-- Audio controls and filters
-- Easy command interface
+* High quality music playback
+* Queue management
+* Playlist support
+* Audio controls and filters
+* Easy command interface
 
 ---
 
 ## 📚 Documentation
 
-Documentation site coming soon.
+📖 Full documentation, setup guides, and troubleshooting:
+
+👉 https://afteryparty.github.io/afterparty-groovy-music/
+
+Includes:
+
+* Quick start guide
+* Command reference
+* Lavalink setup & fixes
+* Common issues & solutions
 
 ---
 
@@ -32,7 +41,7 @@ Documentation site coming soon.
 
 Afterparty Groovy Music is developed by **Afterparty Bot Labs**.
 
-Website  
+🌐 Website
 https://afterpartylabs.xyz
 
 ---
